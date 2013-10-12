@@ -1,0 +1,193 @@
+
+// custom media queries
+// @media #{$custom-sm} { }
+
+$custom-sm-screen: em-calc(767);
+$custom-sm: "only screen and (max-width:"#{$custom-sm-screen}")";
+
+$custom-med-screen: em-calc(960);
+$custom-med: "only screen and (max-width:"#{$custom-med-screen}")";
+
+
+// type sizes, colors, etc
+
+@mixin bodytype {
+  font-size: em-calc(20);
+  font-weight: 300;
+  line-height: 150%;
+}
+
+
+$libsass-bg-color: #404041;
+$topbar-bg-color: #b6f07e;
+
+.logo-wrap {
+  background-color: $libsass-bg-color;
+}
+
+.nav-wrap {
+  background-color: $topbar-bg-color;
+}
+
+.footer-wrap {
+  background-color: $libsass-bg-color;
+}
+
+img#logo {
+  display: block;
+  margin: 20px auto;
+}
+
+section {
+  p {
+    @include bodytype; 
+  }
+  &:not(.top-bar-section) {
+    margin: 3em 0;
+  }
+  &#about {
+    margin-top: -1em;
+    margin-bottom: 4em;
+  }
+}
+
+//keep for nav-alt-hold.html if needed
+section {
+  &:not(.top-bar-section) {
+  margin: 3em 0;
+  }
+  &#about {
+    margin-top: -1em;
+  }
+  &.top-bar-section ul {display: table; margin: 0 auto;}
+  &.top-bar-section ul li {display: table-cell;}
+}
+//
+
+nav ul {
+  margin: 0;
+  text-align: center;
+  & li {
+    display: inline-block;
+    position: relative;
+    padding: 1em;
+    width: 33%;
+    @media #{$custom-med} { 
+      width: 32%;
+    }
+    @media #{$custom-sm} { 
+      padding: 1em .5em;
+    }
+    @include single-transition($property:all, $speed:300ms, $ease:ease-in-out);
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+      cursor: pointer;
+      & a {
+        color: $libsass-bg-color;
+      }
+    }
+    & a {
+      color: white;
+      font-size: 1.25em;
+      font-weight: 200;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      width: 100%;
+      height: 100%;
+      display: block;
+      @include single-transition($property:all, $speed:300ms, $ease:ease-in-out);
+      @media #{$custom-sm} { 
+        font-size: 1em;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+section#links .panel {
+  position: relative;
+  margin-bottom: 0;
+  h3 {
+    font-size: 1.25em;
+    font-weight: 400;
+    @media #{$custom-med} { 
+      font-size: .9em;
+    }
+  }
+  p {
+    font-size: 1em;
+    font-weight: 300;
+    @media #{$custom-med} { 
+      font-size: .75em;
+    }
+  }
+  a {
+    font-weight: 400;
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    right: 1.25em;
+  }
+  @media #{$custom-med} {
+    padding: .75em;
+  }
+}
+
+footer {
+  padding: 4em 0 3em 0;
+  @media #{$custom-med} {
+    padding: 2em 1.5em 1em 1.5em;
+  }
+  & p {
+    color: white;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: center;
+    @media #{$custom-sm} {
+      font-size: .8em;
+    }
+    & a {
+      color: silver;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  & p.small {
+    font-size: .75em;
+  }
+}
+
+img.github-ribbon {
+  @media #{$custom-sm} {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+// custom font sizing small tablets
+
+html.touch {
+  section {
+    margin: 2em 1em;
+  }
+  section:not(.panel) p {
+    @media #{$custom-med} {
+      font: {
+        size: 1em;
+      }
+    }
+    @media #{$custom-sm} {
+      font: {
+        size: .9em;
+      }
+    }
+  }
+  section h2 {
+    font: {
+      size: $h4-font-size;
+    }
+  }
+}
