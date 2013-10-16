@@ -59,11 +59,11 @@
       <h2>What?</h2>
       <p><a href="http://sass-lang.com">Sass</a> is a pre-processing language for CSS. It allows you to write cleaner stylesheets and makes collaboration on your CSS a breeze. There's a ton of information on Sass out there, so we won't repeat it all here. Just make sure to check out <a href="http://sass-lang.com" target="_blank">the Sass site</a> for tutorials and examples.</p>
       <p>Sass was originally written in Ruby. Ruby's great, but people started having a couple of issues. First, we want everyone to enjoy Sass, no matter what language they use. Why restrict everyone to using Ruby? In addition, Ruby can be kind of slow. Lowering compile time for users is important. Enter Libsass.</p>
-			<p>Libsass is C/C++ port of the Sass engine. The point is to be simple, fast, and easy to integrate. Find out more about the project over at <a href="http://github.com/hcatlin/libsass">Github</a>.</p>
+			<p>Libsass is a C/C++ port of the Sass engine. The point is to be simple, fast, and easy to integrate. Find out more about the project over at <a href="http://github.com/hcatlin/libsass">Github</a>.</p>
 		</section>
     <section id="sassc">
       <h2>SassC</h2>
-      <p>Libsass is a just a library. To run the code locally (i.e. to compile your stylesheets), you need an implementer. <a href="httphttps://github.com/akhleung://github.com/hcatlin/sassc">SassC</a> (get it?) is an implementer written in C. There are a number of other implementations of Libsass - for example <a href="https://github.com/andrew/node-sass">Node</a>. We encourage you to write your own port - the whole point of Libsass is that we want to bring Sass to many other languages, not just Ruby!</p>
+      <p>Libsass is just a library. To run the code locally (i.e. to compile your stylesheets), you need an implementer. <a href="httphttps://github.com/akhleung://github.com/hcatlin/sassc">SassC</a> (get it?) is an implementer written in C. There are a number of other implementations of Libsass - for example <a href="https://github.com/andrew/node-sass">Node</a>. We encourage you to write your own port - the whole point of Libsass is that we want to bring Sass to many other languages, not just Ruby!</p>
       <p>To run the compiler on your local machine, you need to build SassC. To build SassC, you must have either a local copy of the libsass source or it must be installed into your system. For development, please use the source version. You must then setup an environment variable pointing to the Libsass folder, for example:</p>
 
       <p><code>export SASS_LIBSASS_PATH=/Users/hcatlin/path/libsass</code></p>
