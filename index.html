@@ -1,8 +1,6 @@
-
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,95 +15,84 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   <title>Libsass | A C implementation of a Sass compiler</title>
   <link rel="stylesheet" href="stylesheets/app.css">
-  <script src="javascripts/vendor/custom.modernizr.js"></script>
+  <script src="javascripts/vendor/modernizr.js"></script>
 </head>
 
 <body>
 
-<div class="mastehead-wrap">
-  <header class="header" role="banner">
+  <div class="mastehead-wrap">
+    <header class="header" role="banner">
 
-    <a href="https://github.com/hcatlin/libsass"><img class="github-ribbon" style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+      <a href="https://github.com/hcatlin/libsass"><img class="github-ribbon" style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
 
-    <div class="logo-wrap">
-      <div class="row">
-        <div class="large-12 columns">
-          <a href="./"><img id="logo" src="images/libsass-logo.png" alt="Libsass"></a>
+      <div class="logo-wrap">
+        <div class="row">
+          <div class="large-12 columns">
+            <a href="./"><img id="logo" src="images/libsass-logo.png" alt="Libsass"></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="nav-wrap">
-      <div class="row">
-        <div class="large-12 columns">
-          <nav class="sticky" role="navigation">
-          <ul>
-            <li><a href="#what">What?</a></li>
-            <li><a href="#sassc">SassC</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
-          </nav>
+      <div class="nav-wrap">
+        <div class="row">
+          <div class="large-12 columns">
+            <nav class="sticky" role="navigation">
+            <ul>
+              <li><a href="#what">What?</a></li>
+              <li><a href="#sassc">SassC</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
 
-  </header>
-</div>
-
-<div class="row">
-	<div class="large-12 columns">
-
-		<section id="what">
-      <h2>What?</h2>
-      <p><a href="http://sass-lang.com">Sass</a> is a pre-processing language for CSS. It allows you to write cleaner stylesheets and makes collaboration on your CSS a breeze. There's a ton of information on Sass out there, so we won't repeat it all here. Just make sure to check out <a href="http://sass-lang.com" target="_blank">the Sass site</a> for tutorials and examples.</p>
-      <p>Sass was originally written in Ruby. Ruby's great, but people started having a couple of issues. First, we want everyone to enjoy Sass, no matter what language they use. Why restrict everyone to using Ruby? In addition, Ruby can be kind of slow. Lowering compile time for users is important. Enter Libsass.</p>
-			<p>Libsass is a C/C++ port of the Sass engine. The point is to be simple, fast, and easy to integrate. Find out more about the project over at <a href="http://github.com/hcatlin/libsass">Github</a>.</p>
-		</section>
-    <section id="sassc">
-      <h2>SassC</h2>
-      <p>Libsass is just a library. To run the code locally (i.e. to compile your stylesheets), you need an implementer. <a href="httphttps://github.com/akhleung://github.com/hcatlin/sassc">SassC</a> (get it?) is an implementer written in C. There are a number of other implementations of Libsass - for example <a href="https://github.com/andrew/node-sass">Node</a>. We encourage you to write your own port - the whole point of Libsass is that we want to bring Sass to many other languages, not just Ruby!</p>
-      <p>To run the compiler on your local machine, you need to build SassC. To build SassC, you must have either a local copy of the libsass source or it must be installed into your system. For development, please use the source version. You must then setup an environment variable pointing to the Libsass folder, for example:</p>
-
-      <p><code>export SASS_LIBSASS_PATH=/Users/hcatlin/path/libsass</code></p>
-
-      <p>The executable will be in the bin folder. To run it, simply try something like:</p>
-
-      <p><code>./bin/sassc [input file] > output.css</code></p>
-
-    </section>
-    <section id="about">
-      <h2>About</h2>
-      <p>This project is the brainchild of <a href="http://twitter.com/hcatlin">Hampton Catlin</a>, the original creator of Sass, and is sponsored by <a href="http://moovweb.com">Moovweb</a>. <a href="http://github.com/akhleung">Aaron Leung</a> from Moovweb is the primary developer. The site and logo were designed by <a href="http://twitter.com/colinjohnston">Colin Johnston</a>.</p>
-    </section>
-
+    </header>
   </div>
-</div>
 
-<div class="footer-wrap">
-  <footer>
-    <div class="row">
-      <div class="large-12 columns">
-        <p>Libsass brought to you by Aaron Leung and Hampton Catlin (<a href="https://twitter.com/hcatlin">@hcatlin</a>)</p>
-      </div>
+  <div class="row">
+  	<div class="large-12 columns">
+
+  		<section id="what">
+        <h2>What?</h2>
+        <p><a href="http://sass-lang.com">Sass</a> is a pre-processing language for CSS. It allows you to write cleaner stylesheets and makes collaboration on your CSS a breeze. There's a ton of information on Sass out there, so we won't repeat it all here. Just make sure to check out <a href="http://sass-lang.com" target="_blank">the Sass site</a> for tutorials and examples.</p>
+        <p>Sass was originally written in Ruby. Ruby's great, but people started having a couple of issues. First, we want everyone to enjoy Sass, no matter what language they use. Why restrict everyone to using Ruby? In addition, Ruby can be kind of slow. Lowering compile time for users is important. Enter Libsass.</p>
+  			<p>Libsass is a C/C++ port of the Sass engine. The point is to be simple, fast, and easy to integrate. Find out more about the project over at <a href="http://github.com/hcatlin/libsass">Github</a>.</p>
+  		</section>
+      <section id="sassc">
+        <h2>SassC</h2>
+        <p>Libsass is just a library. To run the code locally (i.e. to compile your stylesheets), you need an implementer. <a href="httphttps://github.com/akhleung://github.com/hcatlin/sassc">SassC</a> (get it?) is an implementer written in C. There are a number of other implementations of Libsass - for example <a href="https://github.com/andrew/node-sass">Node</a>. We encourage you to write your own port - the whole point of Libsass is that we want to bring Sass to many other languages, not just Ruby!</p>
+        <p>To run the compiler on your local machine, you need to build SassC. To build SassC, you must have either a local copy of the libsass source or it must be installed into your system. For development, please use the source version. You must then setup an environment variable pointing to the Libsass folder, for example:</p>
+
+        <p><code>export SASS_LIBSASS_PATH=/Users/hcatlin/path/libsass</code></p>
+
+        <p>The executable will be in the bin folder. To run it, simply try something like:</p>
+
+        <p><code>./bin/sassc [input file] > output.css</code></p>
+
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>This project is the brainchild of <a href="http://twitter.com/hcatlin">Hampton Catlin</a>, the original creator of Sass, and is sponsored by <a href="http://moovweb.com">Moovweb</a>. <a href="http://github.com/akhleung">Aaron Leung</a> from Moovweb is the primary developer. The site and logo were designed by <a href="http://twitter.com/colinjohnston">Colin Johnston</a>.</p>
+      </section>
+
     </div>
-  </footer>
-</div>
-	
-<script>
-document.write('<script src=' +
-('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-'.js><\/script>')
-</script>
+  </div>
 
-<script src="javascripts/foundation/foundation.min.js"></script>
+  <div class="footer-wrap">
+    <footer>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>Libsass brought to you by Aaron Leung and Hampton Catlin (<a href="https://twitter.com/hcatlin">@hcatlin</a>)</p>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-<script>
-  $(document).foundation();
-</script>
-
-<script type="text/javascript" src="javascripts/libsass-jquery.js"></script>
-
-<script type="text/javascript" src="javascripts/vendor/retina-1.1.0.min.js"></script>
-
+  <script src="javascripts/vendor/all.js"></script>
+  <script type="text/javascript" src="javascripts/libsass-jquery.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>
