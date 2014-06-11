@@ -1,0 +1,7 @@
+{
+  "name": "libsass.com",
+  "dependencies": {
+    "foundation": "5.0.2",
+    "retina.js": "~1.2.0"
+  }
+}
