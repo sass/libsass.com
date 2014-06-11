@@ -2424,14 +2424,14 @@ nav ul {
     display: inline-block;
     position: relative;
     padding: 1em;
-    width: 33%;
+    width: 22%;
     -webkit-transition: all 0.3 ease-in-out;
     -moz-transition: all 0.3 ease-in-out;
     -o-transition: all 0.3 ease-in-out;
     transition: all 0.3 ease-in-out; }
     @media only screen and (max-width: 960px) {
       nav ul li {
-        width: 32%; } }
+        width: 49%; } }
     @media only screen and (max-width: 767px) {
       nav ul li {
         padding: 1em 0.5em; } }
