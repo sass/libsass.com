@@ -2,12 +2,19 @@
 // custom media queries
 // @media #{$custom-sm} { }
 
-$custom-sm-screen: em-calc(767);
-$custom-sm: "only screen and (max-width:"#{$custom-sm-screen}")";
+// 2014-06-11
+// For some reason the media queries below have stopped
+// working. I'm commenting them out for now but refactoring
+// is probably needed?
 
-$custom-med-screen: em-calc(960);
-$custom-med: "only screen and (max-width:"#{$custom-med-screen}")";
+// $custom-sm-screen: em-calc(767px);
+// $custom-sm: "only screen and (max-width:"#{$custom-sm-screen}")";
 
+// $custom-med-screen: em-calc(960px);
+// $custom-med: "only screen and (max-width:"#{$custom-med-screen}")";
+
+$custom-sm: "only screen and (max-width: 767px)";
+$custom-med: "only screen and (max-width: 960px)";
 
 // type sizes, colors, etc
 
@@ -17,6 +24,14 @@ $custom-med: "only screen and (max-width:"#{$custom-med-screen}")";
   line-height: 150%;
 }
 
+@mixin transition($property, $time) {
+  -webkit-transition: $property $time ease-in-out;
+  -moz-transition: $property $time ease-in-out;
+  -o-transition: $property $time ease-in-out;
+  transition: $property $time ease-in-out;
+}
+
+//
 
 $libsass-bg-color: #404041;
 $topbar-bg-color: #b6f07e;
@@ -78,7 +93,7 @@ nav ul {
     @media #{$custom-sm} { 
       padding: 1em .5em;
     }
-    @include single-transition($property:all, $speed:300ms, $ease:ease-in-out);
+    @include transition(all, 0.3);
     &:hover {
       background-color: rgba(255,255,255,0.3);
       cursor: pointer;
@@ -95,7 +110,7 @@ nav ul {
       width: 100%;
       height: 100%;
       display: block;
-      @include single-transition($property:all, $speed:300ms, $ease:ease-in-out);
+      @include transition(all, 0.3s);
       @media #{$custom-sm} { 
         font-size: 1em;
         font-weight: 400;
@@ -187,7 +202,7 @@ html.touch {
   }
   section h2 {
     font: {
-      size: $h4-font-size;
+      size: 1.4375em;
     }
   }
 }
