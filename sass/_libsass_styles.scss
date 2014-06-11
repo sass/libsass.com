@@ -66,6 +66,15 @@ section {
   }
 }
 
+#features {
+  th {
+    width: 220px;
+  }
+  th:last-of-type, td:last-of-type {
+    text-align: center;
+  }
+}
+
 //keep for nav-alt-hold.html if needed
 section {
   &:not(.top-bar-section) {

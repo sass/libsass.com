@@ -71,15 +71,15 @@
         <p><code>./bin/sassc [input file] > output.css</code></p>
       </section>
       
-      <section id="compatibility">
+      <section id="features">
         <h2>Features</h2>
         <p>LibSass takes features directly from the Ruby Sass implementation. As such, it is often behind when it comes to cutting-edge features.</p>
         <p>Below are checklists of important Sass features – basic, then features in 3.2 and 3.3 – that the LibSass team is working on. When they are included in LibSass, the feature will be marked as present. Note that the list is made up of features added to Sass – not necessarily edge cases or bug-fixes from the main project.</p>
         <table>
           <thead>
             <tr>
-              <td>Basic Feature</td>
-              <td>Present in LibSass?</td>
+              <th>Basic Feature</th>
+              <th>Present in LibSass?</th>
             </tr>
           </thead>
           <tr>
@@ -89,10 +89,10 @@
             <td>Mixins</td> <td>Yes</td>
           </tr>
           <tr>
-            <td>Indented syntax</td> <td>Yes</td>
+            <td>Indented syntax</td> <td>Yes <sup><a href="https://github.com/sass/libsass/issues/16">details</a></sup></td>
           </tr>
           <tr>
-            <td>Extend</td> <td>Somewhat</td>
+            <td>Extends</td> <td>Somewhat</td>
           </tr>
         </table>
         <table>
@@ -106,7 +106,7 @@
             <td>@content in mixins</td> <td>??</td>
           </tr>
           <tr>
-            <td>Placeholder selector (%)</td> <td>??</td>
+            <td>Placeholder selector (%)</td> <td>Somewhat <sup><a href="https://github.com/sass/libsass/search?q=placeholder&type=Issues">details</a></sup></td>
           </tr>
           <tr>
             <td>Variable mixin arguments</td> <td>??</td>
@@ -115,8 +115,8 @@
         <table>
           <thead>
             <tr>
-              <td>Sass 3.3 Feature</td>
-              <td>Present in LibSass?</td>
+              <th>Sass 3.3 Feature</th>
+              <th>Present in LibSass?</th>
             </tr>
           </thead>
           <tr>
@@ -126,7 +126,7 @@
             <td>at-root</td> <td>??</td>
           </tr>
           <tr>
-            <td>Parent selector (&) with suffix</td> <td>Yes</td>
+            <td>Parent selector (&) with suffix</td> <td>Yes <sup><a href="https://github.com/sass/libsass/issues/319">details</a></sup></td>
           </tr>
         </table>
       </section>
